@@ -1,0 +1,109 @@
+body {
+  margin: 0;
+  background: radial-gradient(circle at top, #070b14, #02040a);
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas;
+  color: #cbd5e1;
+}
+
+/* TOP BAR */
+.hud-top {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+  border-bottom: 1px solid #1f2937;
+  font-size: 12px;
+  letter-spacing: 2px;
+  color: #60a5fa;
+}
+
+/* GRID */
+.hud-grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  gap: 12px;
+  padding: 15px;
+  height: calc(100vh - 50px);
+}
+
+/* MODULE */
+.module {
+  border: 1px solid rgba(148, 163, 184, 0.15);
+  background: linear-gradient(180deg, rgba(15, 23, 42, 0.85), rgba(2, 6, 23, 0.95));
+  padding: 15px;
+}
+
+/* TITLES */
+.module h3 {
+  font-size: 11px;
+  letter-spacing: 3px;
+  color: #64748b;
+  margin-bottom: 15px;
+}
+
+/* SIGNAL */
+.center {
+  text-align: center;
+}
+
+.signal-core {
+  border: 1px solid rgba(148, 163, 184, 0.2);
+  padding: 40px;
+  margin: 20px 0;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+
+.signal-core.BUY { color: #22c55e; }
+.signal-core.HOLD { color: #facc15; }
+.signal-core.SELL { color: #ef4444; }
+
+/* PRICE */
+.price-line {
+  font-size: 14px;
+  color: #38bdf8;
+  margin-top: 8px;
+}
+
+.price-value {
+  color: #e2e8f0;
+  font-weight: 600;
+}
+
+/* MINI BOX (NEW) */
+.mini-box {
+  margin-top: 12px;
+  padding: 10px;
+  border: 1px solid rgba(148, 163, 184, 0.1);
+  background: rgba(2, 6, 23, 0.4);
+  font-size: 10px;
+  color: #94a3b8;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.mini-box div {
+  margin-top: 4px;
+  color: #cbd5e1;
+}
+
+/* SYSTEM STATUS */
+.list {
+  font-size: 9px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  border-left: 1px solid rgba(56, 189, 248, 0.25);
+  padding-left: 10px;
+}
+
+.list div {
+  padding: 6px 10px;
+  border: 1px solid rgba(148, 163, 184, 0.08);
+  background: rgba(2, 6, 23, 0.45);
+  text-transform: uppercase;
+}
+
+/* COLORS */
+.system-model { color: #60a5fa; }
+.system-feature { color: #34d399; }
+.system-mode { color: #facc15; }
